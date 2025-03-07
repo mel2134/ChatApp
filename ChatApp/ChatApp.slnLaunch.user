@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "ChatApp\\ChatClient.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ChatServer\\ChatServer.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
