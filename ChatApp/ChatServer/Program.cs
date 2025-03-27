@@ -12,9 +12,9 @@ namespace ChatServer
         static void Main(string[] args)
         {
             _clients = new();
-            _listener = new TcpListener(IPAddress.Parse("127.0.0.1"), 7891);
+            _listener = new TcpListener(IPAddress.Parse("0.0.0.0"), 7891);
             _listener.Start();
-            Console.WriteLine("Listening on 127.0.0.1:7891");
+            Console.WriteLine("Listening on 0.0.0.0:7891");
             while (true)
             {
                 var _client = new Client(_listener.AcceptTcpClient());

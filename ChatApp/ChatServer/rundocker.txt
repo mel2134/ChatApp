@@ -1,0 +1,2 @@
+docker build --tag chatserver .
+docker run -p 7891:7891 chatserver
