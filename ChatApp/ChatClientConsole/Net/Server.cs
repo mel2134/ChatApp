@@ -51,10 +51,11 @@ namespace ChatClient.Net
                         _connected = true;
                     }
                 }
-                catch
+                catch(Exception e)
                 {
                     Console.WriteLine($"Failed to reach host on port {port}");
-                    Thread.Sleep(2000);
+                    Console.WriteLine(e);
+                    Thread.Sleep(6000);
                     Console.Clear();
                     return;
                 }

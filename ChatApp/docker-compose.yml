@@ -1,0 +1,22 @@
+services:
+    server:
+        build: ./ChatServer
+        ports:
+             - 7891:7891
+        networks:
+            - some-net
+    client:
+        build: ./ChatClientConsole
+        stdin_open: true
+        tty: true
+        networks:
+            - some-net
+    client2:
+        build: ./ChatClientConsole
+        stdin_open: true
+        tty: true
+        networks:
+            - some-net
+networks:
+  some-net:
+    driver: bridge

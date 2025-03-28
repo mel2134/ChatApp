@@ -13,7 +13,6 @@ namespace ChatClientConsole
                 {
                     try
                     {
-                        Console.Clear();
                         Console.Write("Host: ");
                         string host = Console.ReadLine();
                         Console.Write("Port: ");
@@ -30,7 +29,9 @@ namespace ChatClientConsole
                         Console.Clear();
                     }
                 }
-                Thread.Sleep(3000);
+                //Console.Clear();
+                //Console.WriteLine("Docker internal connection: 'host.docker.internal'");
+                //Thread.Sleep(1000);
             }
         }
     }
